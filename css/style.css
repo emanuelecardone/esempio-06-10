@@ -72,3 +72,8 @@ a[target="_blank"]:hover{
 h3::after{
     content: "...";
 }
+
+a[target="_blank"]::before {
+    content: "\2191";
+    color: red;
+}
