@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 30px 0;
+}
+
+p{
+    margin: 40px 0;
+}
+
+/* collasso dei margini: i margini non vengono sommati
+ma viene considerato solo il margine maggiore
+cioè 40px */
+
+#p2{
+    margin: 10px 0;
+}
+
+#titolo2{
+    margin: 100px 0;
+}
+
+#titolo3{
+    margin: 80px 0;
+    background-color: blue;
+    width: 100px;
+    height: 200px;
+    /* border: 2px solid black; */
+    padding-top: 50px;  /* per sommare i margini */
+}
+
+/* posso sommare i margini se utilizzo un bordo come confine
+oppure se do un padding all'elemento col margine minore
+il padding è più consigliato, dare il padding al contenitore è ancora meglio
+poiché lo imposto a tutto il contenuto */
+
+input[type="text"]{
+    background-color: red;
+}
+
+a[target="_blank"]:hover{
+    background-color: green;
+}
+
+.secondo li:first-child{
+    color: pink;
+}
+
+.primo, .secondo{
+    background-color: grey;
+} /* seleziono tutti gli elementi del primo e secondo */
+
+.liste .primo>li:first-child{
+    color: blue;
+}
+
+.liste .secondo>li:nth-child(3n +2){
+    color: yellow;
+} /* seleziono ogni 3 a partire dal 2 elemento */
+
+.secondo li:nth-child(odd){
+    color: red;
+}
+/* odd per il dispari, even pari */
+
+/* per selezionare elementi che hanno ENTRAMBI le classi scrivo senza spazio ad esempio .primo.secondo{} */
+
+h3::after{
+    content: "...";
+}
